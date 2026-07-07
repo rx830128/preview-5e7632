@@ -138,6 +138,7 @@
   /* 教育の対比図 */
   .vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:14px var(--pad-x)}
   .vs .card{border-radius:10px;padding:13px;box-shadow:var(--sh);font-size:13.5px}
+  .vs .vs-img{width:100%;border-radius:8px;display:block;margin-bottom:9px} /* 20260707 ×/○カードに概念イラスト(vs_bad/vs_good・文字なし)を配線 */
   .vs .bad{background:#faf0ee;border:1px solid #f0d6d0}
   .vs .good{background:var(--theme-soft);border:1px solid #e2d3c2}
   .vs .h{font-weight:800;font-size:14px;margin-bottom:5px}
@@ -345,8 +346,8 @@
   <p class="lines big"><span class="mk">“実感が出る前にやめる設計”</span><br>を、選んでいたから。</p>
   <div class="vs">
     <!-- 20260702 finish: 「→」の孤立行防止＝行末の文節+→をnowrapで結合 -->
-    <div class="card bad"><div class="h">✕ よくある設計</div>がんばる量を<span style="white-space:nowrap">増やす→</span><br>変化が見えるのは<span style="white-space:nowrap">最後→</span><br>その前に心が折れる</div>
-    <div class="card good"><div class="h">◯ 続く設計</div>今ある習慣に<span style="white-space:nowrap">組み込む→</span><br>毎日の“目印”で<span style="white-space:nowrap">続く→</span><br>折れにくい</div>
+    <div class="card bad"><img class="vs-img" src="build_kit/assets/opt/vs_bad.jpg" width="1024" height="768" alt="イメージ図：がんばる量を積み増すほど負担が重なり、成果が出る前に心が折れてしまう様子"><div class="h">✕ よくある設計</div>がんばる量を<span style="white-space:nowrap">増やす→</span><br>変化が見えるのは<span style="white-space:nowrap">最後→</span><br>その前に心が折れる</div>
+    <div class="card good"><img class="vs-img" src="build_kit/assets/opt/vs_good.jpg" width="1024" height="768" alt="イメージ図：朝の習慣に一杯のコーヒーを組み込み、毎日の目印でやさしく続いていく様子"><div class="h">◯ 続く設計</div>今ある習慣に<span style="white-space:nowrap">組み込む→</span><br>毎日の“目印”で<span style="white-space:nowrap">続く→</span><br>折れにくい</div>
   </div>
   <p class="lines">毎日、数字だけを見ると、<br>上下に一喜一憂して心が折れます。<br>だから私は、<strong>“飲んだ日”の記録</strong>を<br><strong>続けるための目印</strong>にしました。</p>
   <img class="sceneimg" src="build_kit/assets/opt/cc_kiroku_d.jpg" width="1024" height="1024" alt="飲んだ日に丸をつけた記録と、いつものコーヒー"><!-- 20260702 Dラウンド D2-7: 記録シートの丸の斜行・ヘッダー帯段違い（顕微鏡[高]・中核モチーフ）をimages.editで整列（リテイク2回目b案採用。右端の丸が罫線に僅かに触れる残留は遠近上許容＝manifest記載）。原板=gen/dround/cc_kiroku_d2_b.png -->
