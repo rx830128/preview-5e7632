@@ -2,7 +2,6 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-  <meta name="robots" content="noindex,nofollow,noarchive">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>白いカップに注ぐと、まっ黒。いつものコーヒーと入れ替えるだけ｜C COFFEE PREMIUM［PR/機能性表示食品］</title>
 <!--
@@ -308,10 +307,10 @@
   </div>
 
   <!-- ⑭→②' アンケート（20260702 Wave1-6: 末尾の「決断後の摩擦位置」からお悩みチェック直後へ移設＝エンゲージメント装置化。JSは.surveyクラス参照のため無変更で動作） -->
-  <section class="survey" aria-label="かんたん3問チェック">
-    <p class="lines" style="font-size:16px;font-weight:800;margin:4px 0">かんたん3問。<br>あなたに合うか、確認しましょう。</p>
+  <section class="survey" aria-label="かんたん1問チェック">
+    <p class="lines" style="font-size:16px;font-weight:800;margin:4px 0">まずは、かんたん1問。<br>あなたに合うか、確認しましょう。</p>
     <p class="note c" style="margin:0 0 6px">※健康状態を判定するものではありません。</p>
-    <div class="dots"><i class="on"></i><i></i><i></i></div>
+    <div class="dots"><i class="on"></i></div><!-- 20260709 ROUND E E4: 3個→1個（実装1問との整合修正） -->
     <div class="q">Q. 朝、コーヒーを飲む習慣はありますか？</div>
     <button class="opt" type="button" aria-pressed="false">はい</button>
     <button class="opt" type="button" aria-pressed="false">ときどき</button>
@@ -357,6 +356,13 @@
   <p class="lines">毎日、数字だけを見ると、<br>上下に一喜一憂して心が折れます。<br>だから私は、<strong>“飲んだ日”の記録</strong>を<br><strong>続けるための目印</strong>にしました。</p>
   <img class="sceneimg" src="build_kit/assets/opt/cc_kiroku_d.jpg" width="1024" height="1024" alt="飲んだ日に丸をつけた記録と、いつものコーヒー"><!-- 20260702 Dラウンド D2-7: 記録シートの丸の斜行・ヘッダー帯段違い（顕微鏡[高]・中核モチーフ）をimages.editで整列（リテイク2回目b案採用。右端の丸が罫線に僅かに触れる残留は遠近上許容＝manifest記載）。原板=gen/dround/cc_kiroku_d2_b.png -->
   <p class="note c">※記録は習慣を続けるための工夫です。食生活や運動の見直しも大切にしながら、毎朝の習慣に取り入れる方法です。</p>
+
+  <!-- E1 教育B：年齢の壁（2026-07-09 ROUND E追加。既存POINTセクションと同一マークアップパターン） -->
+  <h2 class="band"><span class="lb">POINT</span>年齢とともに、減りにくくなる</h2>
+  <p class="lines">もうひとつ、知っておきたい理由がある。<br>食欲のコントロールに関わるホルモン<span style="white-space:nowrap">〈レプチン〉</span>は、年齢とともに分泌量が減っていくという研究報告がある。</p>
+  <img class="sceneimg" src="build_kit/assets/opt/edu_leptin_graph.jpg" width="1024" height="1024" alt="年齢が上がるほど…“食欲コントロール”のホルモンが減っていく。食欲コントロールホルモン（レプチン）の分泌量の変化（20歳を100%とした場合）。60代では20代の約1/4に減少。【出典】Saxena et al., J Clin Endocrinol Metab, 90(3):1504-1510, 2005（※データはイメージです）">
+  <p class="note c">※グラフは研究報告に基づくイメージ図です（出典は図内に記載）。レプチンの働きには個人差があります。※本パートは加齢に関する一般情報で、本品の届出機能を示すものではありません。</p>
+  <p class="lines">20代と同じ「我慢の量」で乗り切ろうとしても、続かないのは当然だった。<br>だから、努力の“量”じゃなく、<br>“やり方”を変える。</p>
 
   <!-- ⑥ 既存策の格下げ -->
   <h2 class="band"><span class="lb">POINT</span>どれを選べば、続くのか</h2>
@@ -449,6 +455,12 @@
       <div class="gbadge" style="flex:1 1 100%">体脂肪と便通、<strong>2つの届出機能</strong>を持つ<span style="white-space:nowrap">機能性コーヒー</span><sup>※3</sup><br><span style="font-weight:400;font-size:11px">葛の花由来イソフラボン＋有胞子性乳酸菌を<br>関与成分とするコーヒーとして日本初<sup>※6</sup></span><!-- 20260702 Dラウンド: 「由来」追加で「とす/る」語中改行が発生→2行固定に変更 --><!-- 20260702 finish: 「するコ／ーヒー」改行落ち防止のnowrap --></div>
     </div>
   </div>
+
+  <!-- E2 W機能性 比較表（2026-07-09 ROUND E追加） -->
+  <p class="lines">機能性のコーヒーは、他にもある。でも——</p>
+  <img class="banner-img" src="build_kit/assets/opt/compare_w_table.jpg" width="1536" height="1024" alt="日本で唯一※。商品×体脂肪×便通の比較表：A社は体脂肪○・便通—、B社は体脂肪○・便通—、C社は体脂肪○・便通—、本品は体脂肪○・便通◎。※当社調べ">
+  <p class="note c">※葛の花由来イソフラボン（テクトリゲニン類として）と有胞子性乳酸菌（Weizmannia coagulans SANK70258）を機能性関与成分とするコーヒー飲料として日本唯一（2025年8月28日時点 当社調べ）。比較表は届出表示の範囲（事実）に基づく機能の有無の比較で、A社〜C社は葛の花由来イソフラボンを関与成分とする機能性表示食品コーヒーの一般例です。特定商品の優劣を示すものではありません。</p>
+
   <!-- 20260702 金銭ゾーン画像化(Batch2): 実績バナー（黒×金・換算注記/時点注記 焼き込み済み。同文テキストは直上gbadgeと注釈ブロック※4※9に併記） -->
   <img class="banner-img" src="build_kit/assets/opt/proof_v2.jpg" width="1040" height="1300" alt="多くの飲用者に選ばれ続けて シリーズ累計 1億2,000万杯突破※1 45万人が定期購入※2 ※1 Cシリーズの累計販売実績、100g入りを30杯に換算した数値。2020年3月～2026年2月末までの出荷数より算出。 ※2 2026年1月時点 シリーズ累計定期購入者数">
   <!-- 20260702 Dラウンド D3-11: 中間CTA新設（CD「証拠直後に受け皿がない」[高]・商品開示＋実績直後の熱を受ける位置。画像CTA一本化ルール準拠でcta_orange_gold_bを再利用） -->
@@ -506,7 +518,7 @@
   <!-- 20260702 Dラウンド D3-13: 定期条件を「初回／2回目以降／やめたいとき」の3見出しで瞬間理解化（consensus 2・事実とレギュ準拠文言は変更なし・並べ替えとラベル付けのみ）★法務ゲート対象 -->
   <div class="terms">
     <b>【ひと目でわかる 定期コース（初回定期限定）のご案内】</b><br>
-    ・<strong>初回</strong>：1,980円（税込）・66%OFF（初回定期限定価格）。<br>
+    ・<strong>初回</strong>：1,980円（税込）・66%OFF（初回定期限定価格）・全国どこでも送料無料。<br>
     ・<strong>2回目以降</strong>：初回から1ヶ月後に2袋、3回目以降は2ヶ月ごとに2袋を特別価格でお届け（送料330円）。価格・回数などの詳細は、ご注文時の最終確認画面・公式サイトでご確認ください。<br>
     ・<strong>やめたいとき</strong>：初回受け取り後、2回目以降はいつでも変更・休止・解約ができます（回数の縛りはありません）。変更・解約は、次回発送予定日の6日前までにご連絡ください。<br>
     ・<strong>ご注意</strong>：初回のみで解約する場合は、別途<strong>解約手数料1,944円（税込）</strong>が必要です。<br>
@@ -524,6 +536,41 @@
   <div class="arrows" aria-hidden="true">▼▼</div>
   <a class="cta" href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001">このコーヒーを、試してみる<small>初回1,980円・66%OFF（初回定期限定）</small></a>
 
+  <!-- E3 末尾3問アンケート（2026-07-09 ROUND E追加。既存.surveyのCSS再利用・独立IIFE） -->
+  <section class="survey" id="survey2" aria-label="かんたん3問アンケート">
+    <p class="lines" style="font-size:16px;font-weight:800;margin:4px 0"><strong>最後に。<br>かんたん3問アンケートのお願いです</strong></p>
+    <p class="note c" style="margin:0 0 6px">※アンケートは任意です。回答内容は保存・送信されません。健康状態を判定するものではありません。</p>
+    <div class="dots"><i class="on"></i><i></i><i></i></div>
+    <div class="step" data-step="1">
+      <div class="q">Q. お腹の脂肪や体重が<br>気になり出した年齢は？</div>
+      <button class="opt" type="button" aria-pressed="false">30代より前</button>
+      <button class="opt" type="button" aria-pressed="false">40代</button>
+      <button class="opt" type="button" aria-pressed="false">50代</button>
+      <button class="opt" type="button" aria-pressed="false">60代以降</button>
+    </div>
+    <div class="step" data-step="2" style="display:none">
+      <div class="q">Q. このコーヒーで、いちばん魅力に感じた点は？</div>
+      <button class="opt" type="button" aria-pressed="false">体脂肪と便通、2つの届出機能<sup>※3</sup></button>
+      <button class="opt" type="button" aria-pressed="false">我慢に頼らず、いつもの1杯を入れ替えるだけ</button>
+      <button class="opt" type="button" aria-pressed="false">1日あたり約66円<sup>※5</sup></button>
+      <button class="opt" type="button" aria-pressed="false">機能性表示食品としての安心感</button>
+    </div>
+    <div class="step" data-step="3" style="display:none">
+      <div class="q">Q. 始めてみたいと思いますか？</div>
+      <button class="opt" type="button" aria-pressed="false">はい</button>
+      <button class="opt" type="button" aria-pressed="false">検討したい</button>
+    </div>
+    <div class="reveal">
+      <p class="lines">ご回答ありがとうございます！<br>お得な購入ページはこちらから。</p>
+      <a class="cta" href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001">お得な購入ページはこちら<small>初回1,980円・66%OFF（初回定期限定）</small></a>
+    </div>
+  </section>
+
+  <!-- E5 離脱防止バナー（2026-07-09 ROUND E追加。画像CTA1枚・CSSボタンとの二段重ねなし） -->
+  <a href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001" style="display:block;text-decoration:none">
+    <img class="cta-img" src="build_kit/assets/opt/exit_alert.jpg" width="1536" height="1024" loading="lazy" alt="ページを閉じる前に。公式サイトのご案内。公式サイトはこちら">
+  </a>
+
   <!-- 注意 -->
   <div class="notice">
     <p class="t">お申し込み前にご確認ください</p>
@@ -535,6 +582,7 @@
     <h4>【機能性表示食品 届出表示】</h4>
     <p>本品には葛の花由来イソフラボン（テクトリゲニン類として）、有胞子性乳酸菌（Weizmannia coagulans SANK70258）が含まれます。葛の花由来イソフラボン（テクトリゲニン類として）には、肥満気味な方の、お腹の脂肪（内臓脂肪と皮下脂肪）や体重やウエスト周囲径を減らすのを助ける機能が、有胞子性乳酸菌（Weizmannia coagulans SANK70258）には生きて腸まで届き腸内環境を整えることで便秘気味の方の便通を改善する機能が報告されています。（届出番号：J1280）</p>
     <p>本品は、事業者の責任において特定の保健の目的が期待できる旨を表示するものとして、消費者庁長官に届出されたものです。ただし、特定保健用食品と異なり、消費者庁長官による個別審査を受けたものではありません。本品は、疾病の診断、治療、予防を目的としたものではありません。バランスの良い食事が健康の基本です。</p>
+    <p>アレルギー（特定原材料に準ずる20品目該当）：くるみ・ごま・大豆・カシューナッツ・キウイ・バナナ・りんご・オレンジ</p>
     <h4>【注釈】</h4>
     <p style="font-size:11px">※バナー画像内に記載の※1・※2は、それぞれの画像内に注記を記載しています。</p><!-- 20260702 Dラウンド D1-3: 画像内※とページ※の二重体系の明示（顕微鏡[確定]） -->
     <p>※3 2成分を機能性関与成分として届出のコーヒー飲料・J1280。　※4 シリーズ累計1億2,000万杯＝Cシリーズの累計販売実績、100g入りを30杯に換算した数値。2020年3月～2026年2月末までの出荷数より算出（実数122,145,145杯・当社調べ。本品単体の数値ではありません）。　※5 1日約66円＝初回1,980円（税込）÷30日の参考値。</p>
@@ -561,6 +609,31 @@
     opts.forEach(function(x){x.setAttribute('aria-pressed','false')}); o.setAttribute('aria-pressed','true');
     reveal.classList.add('on');
   })});
+})();
+/* E3: 末尾3問アンケート survey2（2026-07-09 ROUND E追加。既存アンケートJSは変更しない独立IIFE） */
+(function(){
+  var s=document.getElementById('survey2'); if(!s) return;
+  var dots=s.querySelectorAll('.dots i');
+  var steps=s.querySelectorAll('.step');
+  var reveal=s.querySelector('.reveal');
+  function showStep(i){
+    steps.forEach(function(st,idx){ st.style.display = (idx===i) ? '' : 'none'; });
+  }
+  steps.forEach(function(step,idx){
+    var opts=step.querySelectorAll('.opt');
+    opts.forEach(function(o){o.addEventListener('click',function(){
+      opts.forEach(function(x){x.setAttribute('aria-pressed','false')}); o.setAttribute('aria-pressed','true');
+      if(dots[idx]) dots[idx].classList.add('on');
+      if(idx<steps.length-1){
+        showStep(idx+1);
+        steps[idx+1].scrollIntoView({behavior:'smooth',block:'center'});
+      } else {
+        reveal.classList.add('on');
+        reveal.scrollIntoView({behavior:'smooth',block:'center'});
+      }
+    })});
+  });
+  showStep(0);
 })();
 /* 20260702 Wave1-1→Dラウンド D3-9: 追従CTAの遅延表示（1200→4800px＝共感〜再定義ゾーン通過後。Codex「信頼構築前の売り込み」[確定]・読者「最初のCTAは共感パート後」対応。序盤のホットな読者はアンケートCTAが受ける） */
 (function(){
