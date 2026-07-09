@@ -497,12 +497,12 @@
   <h2 class="band"><span class="lb">PRICE</span>はじめるなら、今の一杯から</h2>
   <!-- 20260702 金銭ゾーン画像化(Batch2→同日二重価格排除で差し替え): 巨大価格の視覚は price_m1_c.png に一本化（画像は二重価格なし＝打消し表示なし・上帯の比較額リボンも排除。経緯はslots.yaml price_table参照）。価格・条件のHTMLテキストは下に縮小併記（読み上げ・検索・監査用） -->
   <!-- 20260707 豪華感UP改修: price_m1_c.jpg（豪華感4/10・金が黄土色の紙）→ price_m1_d.jpg（A案ダーク・プレミアム＝エスプレッソ黒地×金属金・中央グロー。商品「まっ黒な一杯」の黒IDと整合）に差し替え。文言/数字/レイアウトは不変（1,980円/66%OFF/約66円/※1※2）。旧=opt/price_m1_c.jpg 残置。生成=gen/price_regen/price_A1.png（Fable精査→A案採用）。L0全pass・文字健全確認済 -->
-  <img class="banner-img" src="build_kit/assets/opt/price_m1_d.jpg" width="1003" height="1568" alt="＼このページ限定価格！／ C COFFEE PREMIUM 初回定期便 初回定期限定価格 1,980円（税込） 66%OFF※1 1日あたり約66円※2 ※1 初回定期限定 ※2 初回定期価格1,980円を30日分で算出">
+  <img class="banner-img" src="build_kit/assets/opt/price_m2_coupon.jpg" width="1024" height="1024" alt="＼このページ限定価格！／C COFFEE PREMIUM 初回定期便。単品価格5,880円（税込）が、66%OFF※1、初回定期限定価格1,980円（税込）。1日あたり約66円※2。※1 単品価格5,880円（税込）との比較（3,900円引き）・初回定期限定 ※2 初回定期価格1,980円（税込）を30日分で算出">
   <!-- 20260702 Wave1-4: 数字リピート削除（consensus 3）＝price_m1_c画像と同文の見出し行「このページ限定・初回定期1,980円・66%OFF」を削除（1日あたり・特典・注記は残置） -->
   <div class="price" style="padding:12px 14px">
     <!-- 20260702 finish: 「1日あたり 約66円※5」行を削除（price_m1_cバナーに同文焼き込み済み＝二度打ち解消。※5注記は巻末注釈欄に残置） -->
     <!-- 20260702 W2c: tokuten_banner_b.png新設（特典行の直上に可視化バナー・金額表記なし。特典テキスト行は残置） -->
-    <img src="build_kit/assets/opt/tokuten_banner_b_d.jpg" width="980" height="1225" loading="eager" alt="特典 01 計量スプーン／02 アレンジレシピBOOK ※初回定期のお申込みで" style="border-radius:10px;margin:12px auto 0"><!-- 20260702 Dラウンド D2-9: 無地だった本の表紙に「アレンジレシピBOOK」題字＋印刷物質感化（顕微鏡：プレースホルダー感）。原板=gen/dround/tokuten_banner_b_d.png。★特典内容自体はMEJ確認前（ledger: tokuten_items） -->
+    <img src="build_kit/assets/opt/tokuten_4items.jpg" width="1024" height="1536" loading="eager" alt="初回定期 4つの特典。特典01 全国どこでも初回送料無料。特典02 専用計量スプーン。特典03 アレンジレシピBOOK。特典04 会員様限定のご優待（ご継続特典・情報誌などをお届け ※内容は変更になる場合があります）。※初回定期のお申込みで" style="border-radius:10px;margin:12px auto 0"><!-- 20260702 Dラウンド D2-9: 無地だった本の表紙に「アレンジレシピBOOK」題字＋印刷物質感化（顕微鏡：プレースホルダー感）。原板=gen/dround/tokuten_banner_b_d.png。★特典内容自体はMEJ確認前（ledger: tokuten_items） -->
     <div class="tokuten sr-only">特典：計量スプーン＋レシピBOOK つき</div><!-- 20260702 finish: 特典の二度打ち解消＝視覚はtokuten_bannerに一本化・テキストはsr-onlyでDOM併記維持 -->
     <p class="note" style="font-size:12px;margin:8px 0 0;text-align:left">※初回1,980円（税込）・66%OFFは初回定期限定価格です。2回目以降の価格・お届け条件は下記「定期コース（初回定期限定）のご案内」および公式サイトを<span style="white-space:nowrap">ご確認ください。</span></p>
   </div>
@@ -519,7 +519,7 @@
   <!-- 20260702 Dラウンド D3-13: 定期条件を「初回／2回目以降／やめたいとき」の3見出しで瞬間理解化（consensus 2・事実とレギュ準拠文言は変更なし・並べ替えとラベル付けのみ）★法務ゲート対象 -->
   <div class="terms">
     <b>【ひと目でわかる 定期コース（初回定期限定）のご案内】</b><br>
-    ・<strong>初回</strong>：1,980円（税込）・66%OFF（初回定期限定価格）・全国どこでも送料無料。<br>
+    ・<strong>初回</strong>：1,980円（税込）・単品価格5,880円（税込）の66%OFF（初回定期限定価格）・全国どこでも送料無料。<br>
     ・<strong>2回目以降</strong>：初回から1ヶ月後に2袋、3回目以降は2ヶ月ごとに2袋を特別価格でお届け（送料330円）。価格・回数などの詳細は、ご注文時の最終確認画面・公式サイトでご確認ください。<br>
     ・<strong>やめたいとき</strong>：初回受け取り後、2回目以降はいつでも変更・休止・解約ができます（回数の縛りはありません）。変更・解約は、次回発送予定日の6日前までにご連絡ください。<br>
     ・<strong>ご注意</strong>：初回のみで解約する場合は、別途<strong>解約手数料1,944円（税込）</strong>が必要です。<br>
@@ -535,7 +535,8 @@
   <p class="note c">C COFFEE PREMIUM は、肥満気味な方のお腹の脂肪・体重・ウエスト周囲径を減らすのを助ける機能と、便秘気味の方の便通を改善する機能を、それぞれ備えた機能性表示食品です。</p>
   <!-- 20260702 Dラウンド D3-11b: 追伸CTAを画像バナー→動詞入りCSSボタンに変更（CD「最終CTAは決めの動詞・ボタンに見える形」＋顕微鏡「同一バナー近接連打」を同時解消。価格ゾーンは画像CTA・追伸はボタンで役割分離＝二段重ねなし） -->
   <div class="arrows" aria-hidden="true">▼▼</div>
-  <a class="cta" href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001">このコーヒーを、試してみる<small>初回1,980円・66%OFF（初回定期限定）</small></a>
+  <a class="cta" href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001">このコーヒーを、試してみる<small>初回1,980円・66%OFF（初回定期限定）／回数縛りなし・初回送料無料</small></a>
+  <p class="note c">※合わなければ、次回以降いつでも解約OK。初回のみで解約する場合は解約手数料1,944円（税込）が必要です。</p>
 
   <!-- E3 末尾3問アンケート（2026-07-09 ROUND E追加。既存.surveyのCSS再利用・独立IIFE） -->
   <section class="survey" id="survey2" aria-label="かんたん3問アンケート">
@@ -563,7 +564,7 @@
     </div>
     <div class="reveal">
       <p class="lines">ご回答ありがとうございます！<br>お得な購入ページはこちらから。</p>
-      <a class="cta" href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001">お得な購入ページはこちら<small>初回1,980円・66%OFF（初回定期限定）</small></a>
+      <a class="cta" href="https://mejshop.jp/lp?u=premium_mochaset_c_ao_001">お得な購入ページはこちら<small>初回1,980円・66%OFF（初回定期限定）／回数縛りなし・初回送料無料</small></a>
     </div>
   </section>
 
